@@ -15,7 +15,7 @@ export const About: React.FC = () => {
                 <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-brand-900/20 border-8 border-white">
                     {/* PHOTO: Sitting pose */}
                     <img 
-                        src="/foto-de-thais-empatica-02.jpg"
+                        src="https://drive.google.com/uc?export=view&id=1ztFo5ocKl9kA-h-fqxsdk4aZhDDoG7fa"
                         alt="Nutricionista Thais Bertocco" 
                         className="w-full h-auto object-cover"
                     />

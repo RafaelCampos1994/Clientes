@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
                         
                         {/* PHOTO: Standing with crossed arms */}
                         <img 
-                            src="/foto-de-thais-empatica-01.jpg" 
+                            src="https://drive.google.com/uc?export=view&id=1-QZBxABAFWrks3HT_ACoQXzmN0N5zM2K" 
                             alt="Nutricionista Thais Bertocco"
                             className="relative z-10 w-auto h-[450px] lg:h-[650px] object-cover drop-shadow-2xl"
                             style={{ 
