@@ -77,7 +77,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Hero Image / Photo */}
-            <div className="lg:w-1/2 relative lg:block h-[500px] lg:h-[650px] order-1 lg:order-2 w-full flex justify-center">
+            <div className="hidden lg:flex lg:w-1/2 relative h-[500px] lg:h-[650px] order-1 lg:order-2 w-full justify-center">
                  <Reveal delay={0.4}>
                     <div className="relative w-full h-full flex justify-center items-end">
                         {/* Abstract Background Shape - Backlight */}
