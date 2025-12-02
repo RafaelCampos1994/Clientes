@@ -23,17 +23,18 @@ export const Hero: React.FC = () => {
             <img 
                 src="https://i.postimg.cc/7ZCX7K6b/foto-de-thais-empatica-01.jpg" 
                 alt="Nutricionista Thais Bertocco"
-                // Ajuste: Reduzida a opacidade no desktop (md:opacity-90) para escurecer a imagem levemente.
-                // Mantido o posicionamento md:object-[30%_20%] para enquadramento.
-                className="w-full h-full object-cover object-[center_20%] md:object-[30%_20%] opacity-90 md:opacity-90"
+                // Ajuste Desktop: 
+                // 1. md:object-[12%_20%] -> Move a imagem visualmente para a direita (ao alinhar a esquerda da imagem com a esquerda da tela em crop).
+                // 2. md:opacity-100 -> Remove transparência para tirar o aspecto "apagado".
+                className="w-full h-full object-cover object-[center_20%] md:object-[12%_20%] opacity-90 md:opacity-100"
             />
             
             {/* Gradient Masks */}
             
-            {/* Desktop: Gradient intensificado (via-brand-950/95) para garantir leitura do texto */}
-            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 from-20% via-brand-950/95 via-55% to-transparent"></div>
+            {/* Desktop: Gradiente ajustado para terminar antes (via-40%) e ser mais suave (70%), limpando o rosto na direita */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 from-10% via-brand-950/70 via-40% to-transparent"></div>
             
-            {/* Mobile: Horizontal Gradient + Bottom fade (Mantido original) */}
+            {/* Mobile: Mantido original */}
             <div className="md:hidden absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/60 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-80"></div>
         </div>
