@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8 drop-shadow-lg">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8 drop-shadow-lg bg-brand-950/60 md:bg-transparent p-4 -ml-4 md:ml-0 md:p-0 rounded-2xl md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
               Emagreça comendo bem com um plano feito <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-white italic drop-shadow-lg">sob medida</span> pra sua realidade!
             </h1>
           </Reveal>
