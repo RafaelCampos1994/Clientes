@@ -32,7 +32,7 @@ export const About: React.FC = () => {
                     <span className="w-8 h-px bg-gold-600"></span> Prazer, Thais Bertocco
                 </span>
                 <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-950 mb-8 leading-tight">
-                    Especialista em fazer as pazes entre você e a comida.
+                    Recupere o controle do seu corpo sem perder o controle da sua vida
                 </h2>
             </Reveal>
             
@@ -61,9 +61,9 @@ export const About: React.FC = () => {
                             <MapPin className="w-4 h-4 text-brand-500" />
                             <span>Atendimento em Cotia e Região</span>
                         </div>
-                        <a href="https://instagram.com/nutrithaisbertocco" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-brand-700 font-semibold hover:text-gold-600 transition text-sm">
+                        <a href="https://www.instagram.com/thaisbertocco" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-brand-700 font-semibold hover:text-gold-600 transition text-sm">
                             <Instagram className="w-4 h-4" />
-                            @nutrithaisbertocco
+                            @thaisbertocco
                         </a>
                     </div>
                 </div>

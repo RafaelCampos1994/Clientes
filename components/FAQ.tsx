@@ -29,7 +29,7 @@ export const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section id="contact" className="py-24 bg-white">
       <div className="container mx-auto px-6 max-w-3xl">
         <Reveal>
           <div className="text-center mb-16">

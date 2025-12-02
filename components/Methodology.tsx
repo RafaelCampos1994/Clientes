@@ -42,14 +42,18 @@ export const Methodology: React.FC = () => {
   return (
     <section id="methodology" className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
+        
+        {/* Header Section - Centered */}
+        <div className="text-center mb-20 flex flex-col items-center">
           <Reveal width="100%">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-800 rounded-full text-xs font-bold tracking-widest uppercase mb-4 border border-brand-100">
-              O Processo
+            <div className="flex flex-col items-center">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-800 rounded-full text-xs font-bold tracking-widest uppercase mb-4 border border-brand-100">
+                    O Processo
+                </div>
+                <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-950 mb-6 text-center">
+                  4 Fases do <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-400">Método ÂNCORA</span>
+                </h2>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-950 mb-6">
-              4 Fases do <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-400">Método ÂNCORA</span>
-            </h2>
           </Reveal>
         </div>
 
@@ -79,16 +83,17 @@ export const Methodology: React.FC = () => {
             </Reveal>
           ))}
         </div>
-
+        
+        {/* Footer Quote and Button - Centered */}
         <Reveal delay={0.6} width="100%">
-          <div className="flex flex-col items-center gap-8">
-            <p className="text-lg text-brand-800 font-serif italic max-w-2xl mx-auto bg-brand-50 p-8 rounded-xl border border-brand-100 text-center">
-              "O plano deve respeitar sua rotina, seus gostos e seu momento de vida sem terrorismo nutricional."
-            </p>
-            <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-              Quero começar minha jornada
-            </Button>
-          </div>
+            <div className="flex flex-col items-center gap-8 text-center">
+                <p className="text-lg text-brand-800 font-serif italic max-w-2xl mx-auto bg-brand-50 p-8 rounded-xl border border-brand-100">
+                    "O plano deve respeitar sua rotina, seus gostos e seu momento de vida sem terrorismo nutricional."
+                </p>
+                <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                    Quero começar minha jornada
+                </Button>
+            </div>
         </Reveal>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Mail } from 'lucide-react';
+import { Instagram, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -15,9 +15,8 @@ export const Footer: React.FC = () => {
         </p>
 
         <div className="flex justify-center gap-6 mb-12">
-            <a href="#" className="p-3 bg-brand-900 rounded-full hover:bg-gold-500 hover:text-white transition duration-300 shadow-lg shadow-black/20"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="p-3 bg-brand-900 rounded-full hover:bg-gold-500 hover:text-white transition duration-300 shadow-lg shadow-black/20"><Facebook className="w-5 h-5" /></a>
-            <a href="#" className="p-3 bg-brand-900 rounded-full hover:bg-gold-500 hover:text-white transition duration-300 shadow-lg shadow-black/20"><Mail className="w-5 h-5" /></a>
+            <a href="https://www.instagram.com/thaisbertocco" target="_blank" rel="noreferrer" className="p-3 bg-brand-900 rounded-full hover:bg-gold-500 hover:text-white transition duration-300 shadow-lg shadow-black/20"><Instagram className="w-5 h-5" /></a>
+            <a href="https://www.google.com/search?q=Thais+Bertocco+Nutricionista" target="_blank" rel="noreferrer" className="p-3 bg-brand-900 rounded-full hover:bg-gold-500 hover:text-white transition duration-300 shadow-lg shadow-black/20"><MapPin className="w-5 h-5" /></a>
         </div>
         
         <div className="border-t border-brand-900 pt-8 flex flex-col md:flex-row justify-center items-center gap-4 text-xs font-light">

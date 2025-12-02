@@ -47,6 +47,7 @@
               'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
               'float': 'float 6s ease-in-out infinite',
               'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'scroll': 'scroll 40s linear infinite',
             },
             keyframes: {
               fadeInUp: {
@@ -56,6 +57,10 @@
               float: {
                 '0%, 100%': { transform: 'translateY(0)' },
                 '50%': { transform: 'translateY(-10px)' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
               }
             }
           }
@@ -83,6 +88,11 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #174776;
+      }
+      
+      /* Utilities for marquee pause */
+      .pause-on-hover:hover {
+        animation-play-state: paused;
       }
     </style>
   <script type="importmap">
