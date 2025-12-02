@@ -14,8 +14,8 @@ export const PainPoints: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         
         {/* --- PART 1: RESTORED "ROUTINE" SECTION (FULLY CENTRALIZED) --- */}
-        <Reveal>
-          <div className="max-w-4xl mx-auto text-center mb-16 flex flex-col items-center">
+        <Reveal width="100%">
+          <div className="max-w-4xl w-full mx-auto text-center mb-16 flex flex-col items-center">
              <h2 className="font-serif text-4xl md:text-5xl text-brand-950 font-bold mb-6 leading-tight text-center">
                 Chega de dietas que não respeitam <span className="text-brand-600 italic">sua rotina.</span>
              </h2>
