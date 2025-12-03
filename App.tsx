@@ -3,6 +3,7 @@ import { Hero } from './components/Hero';
 import { PainPoints } from './components/PainPoints';
 import { Methodology } from './components/Methodology';
 import { Testimonials } from './components/Testimonials';
+import { Reviews } from './components/Reviews';
 import { About } from './components/About';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
         <PainPoints />
         <Methodology />
         <Testimonials />
+        <Reviews />
         <About />
         <FAQ />
       </main>

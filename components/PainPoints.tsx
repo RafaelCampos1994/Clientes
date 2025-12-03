@@ -4,156 +4,165 @@ import { Button } from './Button';
 import { Clock, Ban, Coffee, Heart, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
 
 export const PainPoints: React.FC = () => {
-  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+    const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
 
-  return (
-    <section className="py-24 bg-brand-50 relative overflow-hidden">
-      {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-200/40 via-transparent to-transparent opacity-60"></div>
+    return (
+        <section className="py-24 bg-brand-50 relative overflow-hidden">
+            {/* Background Decor */}
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-200/40 via-transparent to-transparent opacity-60"></div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        
-        {/* --- PART 1: RESTORED "ROUTINE" SECTION (FULLY CENTRALIZED) --- */}
-        <Reveal width="100%">
-          <div className="max-w-4xl w-full mx-auto text-center mb-16 flex flex-col items-center">
-             <h2 className="font-serif text-4xl md:text-5xl text-brand-950 font-bold mb-6 leading-tight text-center">
-                Chega de dietas que não respeitam <span className="text-brand-600 italic">sua rotina.</span>
-             </h2>
-             <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-center">
-                Enquanto boa parte dos nutricionistas ainda entrega um cardápio pronto e espera
-                que você se adapte, <strong className="text-brand-700">eu faço o caminho inverso.</strong>
-             </p>
+            <div className="container mx-auto px-6 relative z-10">
 
-             <div className="bg-white rounded-r-3xl rounded-bl-3xl border-l-4 border-brand-500 p-8 shadow-md max-w-2xl mx-auto mb-12 relative text-center">
-                <p className="text-xl font-serif italic text-brand-800">
-                    "Não é você que tem que se encaixar na dieta..."
-                </p>
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-brand-100 rounded-full blur-2xl opacity-50 -z-10"></div>
-             </div>
+                {/* --- PART 1: RESTORED "ROUTINE" SECTION (FULLY CENTRALIZED) --- */}
+                <Reveal width="100%">
+                    <div className="max-w-4xl w-full mx-auto text-center mb-16 flex flex-col items-center">
+                        <h2 className="font-serif text-4xl md:text-5xl text-brand-950 font-bold mb-6 leading-tight text-center">
+                            Chega de dietas que não respeitam <span className="text-brand-600 italic">sua rotina.</span>
+                        </h2>
+                        <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-center">
+                            Enquanto boa parte dos nutricionistas ainda entrega um cardápio pronto e espera
+                            que você se adapte, <strong className="text-brand-700">eu faço o caminho inverso.</strong>
+                        </p>
 
-             <p className="text-slate-600 mb-8 text-center">
-                Antes de pensar no que entra no seu prato, eu penso no que existe na sua rotina:
-             </p>
+                        <div className="bg-white rounded-r-3xl rounded-bl-3xl border-l-4 border-brand-500 p-8 shadow-md max-w-2xl mx-auto mb-12 relative text-center">
+                            <p className="text-xl font-serif italic text-brand-800">
+                                "Não é você que tem que se encaixar na dieta..."
+                            </p>
+                            <div className="absolute -top-4 -right-4 w-20 h-20 bg-brand-100 rounded-full blur-2xl opacity-50 -z-10"></div>
+                        </div>
 
-             {/* Grid Items Centered: flex-col and text-center inside items */}
-             <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10 w-full">
-                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
-                    <Clock className="w-8 h-8 text-brand-500 mb-1" />
-                    <span className="font-semibold text-brand-800">Seus horários</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
-                    <Ban className="w-8 h-8 text-brand-500 mb-1" />
-                    <span className="font-semibold text-brand-800">Seus desafios</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
-                    <Coffee className="w-8 h-8 text-brand-500 mb-1" />
-                    <span className="font-semibold text-brand-800">Seus hábitos</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
-                    <Heart className="w-8 h-8 text-brand-500 mb-1" />
-                    <span className="font-semibold text-brand-800">Seus gostos</span>
-                </div>
-             </div>
+                        <p className="text-slate-600 mb-8 text-center">
+                            Antes de pensar no que entra no seu prato, eu penso no que existe na sua rotina:
+                        </p>
 
-             <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
-                Quero agendar minha conversa <ArrowRight className="w-4 h-4" />
-             </Button>
-          </div>
-        </Reveal>
+                        {/* Grid Items Centered: flex-col and text-center inside items */}
+                        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10 w-full">
+                            <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                                <Clock className="w-8 h-8 text-brand-500 mb-1" />
+                                <span className="font-semibold text-brand-800">Seus horários</span>
+                            </div>
+                            <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                                <Ban className="w-8 h-8 text-brand-500 mb-1" />
+                                <span className="font-semibold text-brand-800">Seus desafios</span>
+                            </div>
+                            <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                                <Coffee className="w-8 h-8 text-brand-500 mb-1" />
+                                <span className="font-semibold text-brand-800">Seus hábitos</span>
+                            </div>
+                            <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                                <Heart className="w-8 h-8 text-brand-500 mb-1" />
+                                <span className="font-semibold text-brand-800">Seus gostos</span>
+                            </div>
+                        </div>
 
-        {/* --- PART 2: NEW COMPARISON SECTION --- */}
-        <div className="mt-24 md:mt-32">
-            <Reveal width="100%">
-                <div className="text-center mb-16 flex flex-col items-center">
-                     <h2 className="font-serif text-3xl md:text-5xl text-brand-950 font-bold mb-4">
-                        Formas de Acompanhamento
-                     </h2>
-                     <div className="w-24 h-1 bg-gold-400 rounded-full"></div>
-                </div>
-            </Reveal>
-
-            {/* Added padding wrapper to prevent shadows from being clipped by Reveal or container */}
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-stretch p-4">
-                
-                {/* Card: Tradicional / Convênio */}
-                <div className="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 shadow-lg h-full relative opacity-90 hover:opacity-100 transition-opacity">
-                    <div className="absolute top-0 left-0 w-full h-3 bg-slate-300 rounded-t-3xl"></div>
-                    <h3 className="text-2xl lg:text-3xl font-serif font-medium text-slate-500 mb-8 text-center border-b border-slate-200 pb-4">
-                        Atendimento Tradicional
-                    </h3>
-                    
-                    <ul className="space-y-5 mb-8">
-                        <li className="flex items-start gap-3 text-slate-500">
-                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-sm leading-relaxed">Consulta rápida e padronizada (15 a 20min);</p>
-                        </li>
-                        <li className="flex items-start gap-3 text-slate-500">
-                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-sm leading-relaxed">Dieta de gaveta (genérica e restritiva);</p>
-                        </li>
-                        <li className="flex items-start gap-3 text-slate-500">
-                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-sm leading-relaxed">Sem suporte para dúvidas após a consulta;</p>
-                        </li>
-                        <li className="flex items-start gap-3 text-slate-500">
-                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-sm leading-relaxed">Foco apenas em calorias e peso na balança;</p>
-                        </li>
-                         <li className="flex items-start gap-3 text-slate-500">
-                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-sm leading-relaxed">Você sai com dúvidas e desmotivado.</p>
-                        </li>
-                    </ul>
-                </div>
-
-                {/* Card: Método Ancora */}
-                {/* Removed Reveal wrapper around individual card to avoid clipping shadows. Using animation class instead. */}
-                <div className="bg-white rounded-3xl p-8 lg:p-10 border-2 border-brand-500 shadow-2xl shadow-brand-900/10 h-full relative transform md:-translate-y-6 z-10">
-                    <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-brand-500 to-gold-500 rounded-t-3xl"></div>
-                    <div className="absolute -top-5 right-1/2 transform translate-x-1/2 bg-gold-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg border-2 border-white whitespace-nowrap">
-                        Recomendado
-                    </div>
-
-                    <h3 className="text-3xl font-serif font-medium text-brand-700 mb-8 text-center border-b border-brand-100 pb-4">
-                        Método Âncora
-                    </h3>
-                    
-                    <ul className="space-y-4 mb-8">
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Avaliação completa: física, nutricional e comportamental;</p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Cardápio 100% individualizado para seus gostos;</p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Suporte diário pelo WhatsApp para dúvidas;</p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Jornada em 4 fases estruturadas para não ter recaídas;</p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Materiais de apoio, lâminas e ferramentas;</p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                            <p className="text-brand-900 text-sm font-medium leading-relaxed">Acesso à plataforma exclusiva com conteúdos extras.</p>
-                        </li>
-                    </ul>
-                    
-                    <div className="mt-8 text-center">
-                        <Button fullWidth variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
-                            Quero viver essa experiência
+                        <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
+                            Quero agendar minha conversa <ArrowRight className="w-4 h-4" />
                         </Button>
+                    </div>
+                </Reveal>
+
+                {/* --- PART 2: NEW COMPARISON SECTION --- */}
+                <div className="mt-24 md:mt-32">
+                    <Reveal width="100%">
+                        <div className="text-center mb-16 flex flex-col items-center">
+                            <h2 className="font-serif text-3xl md:text-5xl text-brand-950 font-bold mb-4">
+                                Por que o Método Âncora é diferente?
+                            </h2>
+                            <div className="w-24 h-1 bg-gold-400 rounded-full"></div>
+                        </div>
+                    </Reveal>
+
+                    {/* Added padding wrapper to prevent shadows from being clipped by Reveal or container */}
+                    <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-stretch p-4">
+
+                        {/* Card: Tradicional / Convênio */}
+                        <div className="h-full">
+                            <Reveal width="100%" direction="left">
+                                <div className="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 shadow-lg h-full relative opacity-90 hover:opacity-100 transition-opacity overflow-hidden">
+                                    <div className="absolute top-0 left-0 w-full h-3 bg-slate-300"></div>
+                                    <h3 className="text-2xl lg:text-3xl font-serif font-medium text-slate-500 mb-8 text-center border-b border-slate-200 pb-4">
+                                        O que você encontra por aí
+                                    </h3>
+
+                                    <ul className="space-y-5 mb-8">
+                                        <li className="flex items-start gap-3 text-slate-500">
+                                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                                            <p className="text-sm leading-relaxed">Consulta rápida e padronizada (15 a 20min);</p>
+                                        </li>
+                                        <li className="flex items-start gap-3 text-slate-500">
+                                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                                            <p className="text-sm leading-relaxed">Dieta de gaveta (genérica e restritiva);</p>
+                                        </li>
+                                        <li className="flex items-start gap-3 text-slate-500">
+                                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                                            <p className="text-sm leading-relaxed">Sem suporte para dúvidas após a consulta;</p>
+                                        </li>
+                                        <li className="flex items-start gap-3 text-slate-500">
+                                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                                            <p className="text-sm leading-relaxed">Foco apenas em calorias e peso na balança;</p>
+                                        </li>
+                                        <li className="flex items-start gap-3 text-slate-500">
+                                            <XCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                                            <p className="text-sm leading-relaxed">Você sai com dúvidas e desmotivado.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Reveal>
+                        </div>
+
+                        {/* Card: Método Ancora */}
+                        <div className="h-full relative z-10">
+                            <Reveal width="100%" direction="right" delay={0.2}>
+                                <div className="relative h-full transform md:-translate-y-6">
+                                    <div className="absolute -top-5 right-1/2 transform translate-x-1/2 bg-gold-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg border-2 border-white whitespace-nowrap z-20">
+                                        Recomendado
+                                    </div>
+                                    <div className="bg-white rounded-3xl p-8 lg:p-10 border-2 border-brand-500 shadow-2xl shadow-brand-900/10 h-full relative overflow-hidden">
+                                        <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-brand-500 to-gold-500"></div>
+
+                                        <h3 className="text-3xl font-serif font-medium text-brand-700 mb-8 text-center border-b border-brand-100 pb-4">
+                                            Método Âncora
+                                        </h3>
+
+                                        <ul className="space-y-4 mb-8">
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Avaliação completa: física, nutricional e comportamental;</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Cardápio 100% individualizado para seus gostos;</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Suporte diário pelo WhatsApp para dúvidas;</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Jornada em 4 fases estruturadas para não ter recaídas;</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Materiais de apoio, lâminas e ferramentas;</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Acesso à plataforma exclusiva com conteúdos extras.</p>
+                                            </li>
+                                        </ul>
+
+                                        <div className="mt-8 text-center">
+                                            <Button fullWidth variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
+                                                Quero viver essa experiência
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Reveal>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };

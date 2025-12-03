@@ -4,9 +4,17 @@ interface RevealProps {
   children: React.ReactNode;
   width?: 'fit-content' | '100%';
   delay?: number;
+  direction?: 'up' | 'down' | 'left' | 'right';
+  className?: string; // Allow passing custom classes
 }
 
-export const Reveal: React.FC<RevealProps> = ({ children, width = 'fit-content', delay = 0 }) => {
+export const Reveal: React.FC<RevealProps> = ({
+  children,
+  width = 'fit-content',
+  delay = 0,
+  direction = 'up',
+  className = ''
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,11 +38,22 @@ export const Reveal: React.FC<RevealProps> = ({ children, width = 'fit-content',
     };
   }, []);
 
+  const getTransform = () => {
+    if (isVisible) return 'translate(0, 0)';
+    switch (direction) {
+      case 'up': return 'translateY(75px)';
+      case 'down': return 'translateY(-75px)';
+      case 'left': return 'translateX(-75px)';
+      case 'right': return 'translateX(75px)';
+      default: return 'translateY(75px)';
+    }
+  };
+
   return (
-    <div ref={ref} style={{ width, overflow: 'hidden' }}>
+    <div ref={ref} style={{ width }} className={className}>
       <div
         style={{
-          transform: isVisible ? 'translateY(0)' : 'translateY(75px)',
+          transform: getTransform(),
           opacity: isVisible ? 1 : 0,
           transition: `all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
         }}
