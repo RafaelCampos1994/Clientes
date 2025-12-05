@@ -56,11 +56,10 @@ export const About: React.FC = () => {
                             <div className="mt-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
                                 <Button
                                     variant="secondary"
-                                    href={whatsappLink}
-                                    target="_blank"
                                     onClick={() => {
                                         window.dataLayer = window.dataLayer || [];
                                         window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'about_section' });
+                                        window.open(whatsappLink, '_blank');
                                     }}
                                 >
                                     Agendar minha consulta

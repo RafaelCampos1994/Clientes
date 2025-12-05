@@ -57,11 +57,10 @@ export const PainPoints: React.FC = () => {
 
                         <Button
                             variant="secondary"
-                            href={whatsappLink}
-                            target="_blank"
                             onClick={() => {
                                 window.dataLayer = window.dataLayer || [];
                                 window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'pain_points_section' });
+                                window.open(whatsappLink, '_blank');
                             }}
                         >
                             Falar com a Nutri Agora
@@ -171,11 +170,10 @@ export const PainPoints: React.FC = () => {
                                             <Button
                                                 fullWidth
                                                 variant="secondary"
-                                                href={whatsappLink}
-                                                target="_blank"
                                                 onClick={() => {
                                                     window.dataLayer = window.dataLayer || [];
                                                     window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'pain_points_section_bottom' });
+                                                    window.open(whatsappLink, '_blank');
                                                 }}
                                             >
                                                 Quero viver essa experiência
