@@ -12,11 +12,11 @@ export const FAQ: React.FC = () => {
     },
     {
       question: "Qual a diferença entre sua consulta e a de um plano de saúde?",
-      answer: "No plano, as consultas costumam ser rápidas e padronizadas. No meu acompanhamento, faço uma investigação profunda da sua rotina, gostos e dificuldades para montar um plano que você realmente consiga seguir, com suporte próximo."
+      answer: "As consultas de plano de saúde são muito genéricas com uma dieta pronta de gaveta que não leva em consideração suas dificuldades, rotina e objetivos, por isso não trabalhamos com consultas de convênio.\nJá comigo você terá um atendimento premium e individualizado, onde vou primeiro te ouvir: para criar um plano 100% personalizado pra você, sua rotina, dificuldades e encaixar seus alimentos favoritos na sua dieta."
     },
     {
       question: "Onde fica o consultório?",
-      answer: "O consultório está localizado em Cotia, em local de fácil acesso. Também ofereço a modalidade de atendimento online com a mesma qualidade."
+      answer: "Você pode ser atendido(a) presencialmente por mim em Cotia no Open Mall The Square ou em São Roque na Avenida Bandeirantes.\nOu se preferir: você pode ser acompanhado por mim de onde estiver! Atendo online para todo o Brasil, com a mesma qualidade e atenção que você teria no consultório. Ou seja, não importa onde você esteja, sua transformação está a apenas uma mensagem de distância!"
     },
     {
       question: "Quais são as formas de pagamento disponíveis?",
@@ -49,13 +49,13 @@ export const FAQ: React.FC = () => {
         </div>
 
         <Reveal delay={0.3} width="100%">
-            <div className="flex flex-col items-center gap-4">
-                <p className="text-slate-500 text-sm">Ainda com dúvida? Me chame no WhatsApp.</p>
-                <Button variant="secondary" onClick={() => window.open('https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento', '_blank')}>
-                    <MessageCircle className="w-4 h-4" />
-                    Falar com a equipe
-                </Button>
-            </div>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-slate-500 text-sm">Ainda com dúvida? Me chame no WhatsApp.</p>
+            <Button variant="secondary" onClick={() => window.open('https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento', '_blank')}>
+              <MessageCircle className="w-4 h-4" />
+              Falar com a equipe
+            </Button>
+          </div>
         </Reveal>
       </div>
     </section>
@@ -67,17 +67,17 @@ const FaqAccordion: React.FC<{ item: FaqItem }> = ({ item }) => {
 
   return (
     <div className={`rounded-2xl overflow-hidden border transition-all duration-300 ${isOpen ? 'bg-brand-50 border-brand-200 shadow-md' : 'bg-white border-slate-100 hover:border-brand-100'}`}>
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between p-6 text-left"
       >
         <span className={`font-serif font-bold text-lg pr-4 ${isOpen ? 'text-brand-800' : 'text-slate-700'}`}>{item.question}</span>
         <div className={`p-1 rounded-full transition-transform duration-300 flex-shrink-0 ${isOpen ? 'bg-brand-200 text-brand-800 rotate-180' : 'bg-slate-50 text-slate-400'}`}>
-            <Minus className={`w-5 h-5 ${isOpen ? '' : 'hidden'}`} />
-            <Plus className={`w-5 h-5 ${isOpen ? 'hidden' : ''}`} />
+          <Minus className={`w-5 h-5 ${isOpen ? '' : 'hidden'}`} />
+          <Plus className={`w-5 h-5 ${isOpen ? 'hidden' : ''}`} />
         </div>
       </button>
-      <div 
+      <div
         className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <p className="text-slate-600 leading-relaxed border-t border-brand-200/50 pt-4">{item.answer}</p>

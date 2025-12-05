@@ -16,17 +16,18 @@ export const Hero: React.FC = () => {
                         src="https://i.postimg.cc/7ZCX7K6b/foto-de-thais-empatica-01.jpg"
                         alt="Nutricionista Thais Bertocco"
                         // Ajuste: 
-                        // Imagem ocupa 100% da opacidade, posicionada levemente a direita para dar espaço ao texto
-                        className="w-full h-full object-cover object-[center_20%] md:object-[12%_20%] opacity-100"
+                        // Mobile: posicionada à esquerda (20%) para mostrar o rosto da Thais
+                        // Desktop: posicionada levemente a direita para dar espaço ao texto
+                        className="w-full h-full object-cover object-[20%_20%] md:object-[12%_20%] opacity-100"
                     />
 
                     {/* Gradient Masks - Refined for "Shadow Effect" instead of "Dark Overlay" */}
 
                     {/* Desktop: Gradiente linear apenas na esquerda para garantir leitura do texto, suavizando rapidamente */}
-                    <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/50 to-transparent w-[70%]"></div>
+                    <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/60 to-transparent w-[70%]"></div>
 
                     {/* Mobile: Gradiente mais forte para garantir contraste em telas pequenas */}
-                    <div className="md:hidden absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
+                    <div className="md:hidden absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-transparent"></div>
                 </div>
             </div>
 
@@ -63,7 +64,7 @@ export const Hero: React.FC = () => {
                         <div className="mb-8">
                             <span className="text-brand-200 text-sm font-semibold tracking-wide uppercase drop-shadow-md flex items-center gap-2">
                                 <div className="w-2 h-2 bg-gold-500 rounded-full animate-pulse"></div>
-                                Nutricionista em Granja Viana e São Roque
+                                Nutricionista em Granja Viana <br className="md:hidden" />e São Roque
                             </span>
                         </div>
                     </Reveal>
@@ -74,14 +75,14 @@ export const Hero: React.FC = () => {
                                 variant="secondary"
                                 onClick={() => window.open(whatsappLink, '_blank')}
                             >
-                                Conversar sobre meu plano
+                                Falar com a Nutri Agora!
                             </Button>
                             <Button
                                 variant="outline"
                                 className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm shadow-lg"
                                 onClick={() => document.getElementById('methodology')?.scrollIntoView({ behavior: 'smooth' })}
                             >
-                                Entender o Método
+                                Conheça o Método
                             </Button>
                         </div>
                     </Reveal>

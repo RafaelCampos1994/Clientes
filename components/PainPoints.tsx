@@ -56,7 +56,7 @@ export const PainPoints: React.FC = () => {
                         </div>
 
                         <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
-                            Quero agendar minha conversa <ArrowRight className="w-4 h-4" />
+                            Falar com a Nutri Agora
                         </Button>
                     </div>
                 </Reveal>
@@ -127,27 +127,35 @@ export const PainPoints: React.FC = () => {
                                         <ul className="space-y-4 mb-8">
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Avaliação completa: física, nutricional e comportamental;</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Avaliação completa: física, nutricional e bioquímica</strong>; para investigar seu metabolismo a fundo e não tratar apenas o peso.</p>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Cardápio 100% individualizado para seus gostos;</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Cardápio individualizado</strong>; planejado para a sua rotina e preferências, para que você tenha resultados comendo o que gosta.</p>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Suporte diário pelo WhatsApp para dúvidas;</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Suplementação e pedido de exames (quando necessário)</strong>; para corrigir deficiências de vitaminas e devolver sua energia.</p>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Jornada em 4 fases estruturadas para não ter recaídas;</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>De 1 a 3 consultas por mês, conforme necessidade</strong>; para garantir que o ritmo do acompanhamento se ajuste à sua evolução, sem te deixar desamparada.</p>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Materiais de apoio, lâminas e ferramentas;</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Jornada em 4 fases: Ancoragem, Rota, Navegação, Porto Seguro</strong>; uma estrutura passo a passo para você conquistar autonomia.</p>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                                                <p className="text-brand-900 text-sm font-medium leading-relaxed">Acesso à plataforma exclusiva com conteúdos extras.</p>
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Suporte diário e acompanhamento próximo</strong>; para tirar dúvidas na hora e evitar que um deslize vire desistência.</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Acesso à plataforma de exercícios físicos e de meditação</strong>; para cuidar também da sua ansiedade e fortalecer sua mente durante o processo.</p>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <CheckCircle2 className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                                                <p className="text-brand-900 text-sm leading-relaxed"><strong>Acesso à plataforma com conteúdos exclusivos para acelerar seus resultados</strong>.</p>
                                             </li>
                                         </ul>
 
