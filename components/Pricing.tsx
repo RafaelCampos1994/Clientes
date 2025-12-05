@@ -38,10 +38,11 @@ export const Pricing: React.FC = () => {
             <Button
               variant="secondary"
               className="text-lg px-12 py-5 shadow-xl shadow-gold-500/20"
+              href="https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento"
+              target="_blank"
               onClick={() => {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'pricing_section' });
-                window.open('https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento', '_blank');
               }}
             >
               <MessageCircle className="w-6 h-6" />

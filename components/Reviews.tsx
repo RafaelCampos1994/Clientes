@@ -124,10 +124,11 @@ export const Reviews: React.FC = () => {
                     <div className="flex justify-center w-full">
                         <Button
                             variant="secondary"
+                            href={whatsappLink}
+                            target="_blank"
                             onClick={() => {
                                 window.dataLayer = window.dataLayer || [];
                                 window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'reviews_section' });
-                                window.open(whatsappLink, '_blank');
                             }}
                         >
                             Quero começar minha transformação <ArrowRight className="ml-2 w-4 h-4" />

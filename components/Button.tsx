@@ -3,6 +3,8 @@ import React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   fullWidth?: boolean;
+  href?: string;
+  target?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -10,6 +12,8 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   fullWidth = false,
   className = '',
+  href,
+  target,
   ...props
 }) => {
   const baseStyles = "px-8 py-4 rounded-xl font-medium transition-all duration-300 transform active:scale-95 text-base tracking-wide flex items-center justify-center gap-2 cursor-pointer decoration-0";
@@ -29,6 +33,19 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const classes = `${baseStyles} ${variants[variant]} ${fullWidth ? 'w-full' : ''} ${className}`;
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target={target}
+        className={classes}
+        onClick={props.onClick as any}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
     <button

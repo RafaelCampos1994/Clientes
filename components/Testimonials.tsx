@@ -126,10 +126,11 @@ export const Testimonials: React.FC = () => {
                     <div className="flex justify-center w-full">
                         <Button
                             variant="secondary"
+                            href={whatsappLink}
+                            target="_blank"
                             onClick={() => {
                                 window.dataLayer = window.dataLayer || [];
                                 window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'testimonials_section' });
-                                window.open(whatsappLink, '_blank');
                             }}
                         >
                             Quero ter resultados assim <ArrowRight className="ml-2 w-4 h-4" />
